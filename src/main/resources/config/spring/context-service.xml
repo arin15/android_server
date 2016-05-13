@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+	
+	<import resource="classpath:config/spring/service/context-component-scan.xml"/>	
+<!-- 	<import resource="classpath:config/spring/service/context-properties.xml"/> -->
+	<import resource="classpath:config/spring/service/context-datasource-jdbc.xml"/>
+	<import resource="classpath:config/spring/service/context-sqlmapper.xml"/>
+	<import resource="classpath:config/spring/service/mybatis-config.xml"/>
+<!-- 	<import resource="classpath:config/spring/service/context-transaction.xml"/> -->
+<!-- 	<import resource="classpath:config/spring/service/context-cache.xml"/> -->
+<!-- 	<import resource="classpath:config/spring/service/context-security.xml"/> -->
+<!--    <import resource="classpath:config/spring/service/context-file.xml"/> -->
+<!-- 	<import resource="classpath:config/spring/service/context-message.xml"/> -->
+<!-- 	<import resource="classpath:config/spring/service/context-validation.xml"/> -->
+</beans>

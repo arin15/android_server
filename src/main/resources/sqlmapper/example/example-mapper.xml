@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd <http://mybatis.org/dtd/mybatis-3-mapper.dtd> "> 
+					<!-- sql 작성후 namespace =  dao 만들어줌 -->
+<mapper namespace="com.gsitm.edu.example.dao.ExampleDAO">
+	<select id="selectEmpList" resultType="hashmap">
+		SELECT EMPLOYEE_ID
+              ,FIRST_NAME
+              ,LAST_NAME
+              ,EMAIL
+              ,PHONE_NUMBER
+         FROM EMPLOYEES
+        WHERE 1=1
+          AND EMPLOYEE_ID = #{id}
+     ORDER BY EMPLOYEE_ID
+	</select>
+</mapper>
